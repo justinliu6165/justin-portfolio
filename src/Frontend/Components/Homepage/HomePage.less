@@ -1,0 +1,35 @@
+@import '../Variables.less';
+
+.homepage-background { 
+    background: url('../Images/dustin-lee-19667-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .homepage-background();
+
+    .title {
+        color: @homepage-font-color;
+        font-size: @font-size*4;
+        letter-spacing: 1rem;
+        position: absolute;
+        left: 50%;  
+        top: 50%;
+        transform: translate(-50%);
+        border: 3px solid white;
+        padding: 0.5em;
+        text-shadow: 3px 4px rgba(0, 0, 0, 0.158);
+        box-shadow: 2px 6px rgba(0, 0, 0, 0.068);
+        
+        .mini{
+            font-size: @font-size*1.5;
+            font-weight: bold;
+        }
+    }
+}

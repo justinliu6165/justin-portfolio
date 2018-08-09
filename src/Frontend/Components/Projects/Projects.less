@@ -1,0 +1,83 @@
+@import '../Variables.less';
+
+@imagesPath: '../Images';
+
+.background-thumbnail{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#project-container{
+    height: 100vh;
+    background-image: url("@{imagesPath}/project2.jpg");
+    background-attachment: fixed;
+    .background-thumbnail();
+
+    .project-title{
+        padding-top: 1em;
+        font-size: @font-size*2;
+        color: white;
+        letter-spacing: 1rem;
+    }
+
+    .thumbnail-container{
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem;
+        
+        .thumbnail{
+            margin: 4em;
+            height: 280px;
+            flex: 1 1 20%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            .overlay{
+                opacity: 0;
+                color: white;
+                background-color: rgba(68, 77, 202, 0.8);
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                transition: all 1s ease;
+            
+                .description{
+                    padding: 1rem;
+            
+                    a {
+                        text-decoration: none;
+                        border: 1px solid rgba(153, 158, 224, 0.8);
+                        border-radius: 5px;
+                        padding: 0.3em;
+                        color: inherit;
+                        background-color: rgba(153, 158, 224, 0.8);
+                    }
+                }
+            
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+
+        .kodflix-thumbnail{
+            background-image: url("@{imagesPath}/kodflix.jpg");
+            background-color: black;
+            .background-thumbnail();
+        }
+
+        .citygem-thumbnail{
+            background-image: url("@{imagesPath}/citygem.jpg");
+            .background-thumbnail();
+        }
+        
+        .rgbgame-thumbnail{
+            background-image: url("@{imagesPath}/rgbgame.jpg");
+            .background-thumbnail();
+        }  
+    }
+}
