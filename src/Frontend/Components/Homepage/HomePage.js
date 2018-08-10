@@ -8,7 +8,7 @@ export default function HomePage() {
             <NavBar />
             <div className="title">
                 <div className="name">Justin Liu</div>
-                <div className="mini">Portfolio</div>
+                <div className="mini">Junior Web Developer</div>
             </div>
         </div>
     )
