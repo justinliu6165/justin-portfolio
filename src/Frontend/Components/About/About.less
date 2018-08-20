@@ -6,31 +6,70 @@
     .about-title{
         padding-top: 1em;
         font-size: @font-size*2;
-        color: white;
+        color: @homepage-font-color;
         letter-spacing: 1rem;
+        text-transform: uppercase;
+        
+        &:after {
+            content: '';
+            width: 24%;
+            height: 2px;
+            display: block;
+            margin: 0 auto;
+            background: @homepage-font-color;
+        }
     }
 
-    .description{
-        color: white;
-        width: 50%;
-        margin: 1rem auto;
-        line-height: 2rem;
-    } 
+    .profile{
+        display: flex;
+
+       .description{
+            flex: 1;
+            color: @homepage-font-color;
+            width: 30%;
+            margin: 1rem;
+            line-height: 2rem;
+            text-align: right;
+            padding-left: 3rem;
+        } 
+
+        .profile-image{
+            flex: 1;
+            width: 30%;
+            margin-top: 1rem;
+            margin-right: 4rem;
+            border-radius: 0.2rem;
+            height: 22%;
+            box-shadow: 3px 5px @main-color;
+        } 
+    }
 
     .info{
         margin-left: 1rem;
 
         .info-sec{
-        display: inline-block;
-        margin: 1rem 2rem;
-        color: rgb(0, 0, 0);
-        border: 1px solid rgb(110, 110, 110);
-        border-radius: 5px;
-        padding: 1rem;
-        a{
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-        }
+            display: inline-block;
+            margin: 1rem 2rem;
+            color:rgb(49, 49, 49);
+            border: 1px solid rgb(110, 110, 110);
+            border-radius: 5px;
+            padding: 1rem;
+            background-color: lighten(@main-color, 30%);
+            transition: all 0.2s linear;
+            box-shadow: 1.4px 1.4px @main-color;
+
+            &:hover{
+                background-color: darken(@main-color, 10%);
+                color:@homepage-font-color;
+                a{
+                    color: @homepage-font-color;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: rgb(49, 49, 49);
+            }
         }
     }
     

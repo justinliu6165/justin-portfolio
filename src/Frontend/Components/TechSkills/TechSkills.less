@@ -1,22 +1,31 @@
 @import '../Variables.less';
 
 #skills-container{
-    height: 40vh;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
     
     .skills-title{
         padding-top: 1em;
-        font-size: @font-size*2;
+        font-size: @font-size*2.4;
         color: white;
         letter-spacing: 1rem;
     }
 
     .skills-list{
         display: flex;
-        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        vertical-align: center;
+        position: absolute;
+        top: 30%;
 
         .skills{
-            list-style-type: none;
             padding: 2rem;
+            display: block;
+            color: white;
+            line-height: 3rem;
         }
     }
 }
