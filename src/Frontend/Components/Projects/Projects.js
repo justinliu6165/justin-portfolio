@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
                 <div className="project-title">Projects</div>
                 <div className="thumbnail-container">
                     <div className="kodflix-thumbnail thumbnail">
-                        <div class="overlay">
+                        <div className="overlay">
                             <div className="description">
                                 <h3>KODFLIX</h3>
                                 <p>A video platform that brings trailers in a friendly UI setting</p>
@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
                         </div>
                     </div>
                     <div className="citygem-thumbnail thumbnail">
-                        <div class="overlay">
+                        <div className="overlay">
                             <div className="description">
                                 <h3>CITYGEM</h3>
                                 <p>Explore the hidden gems of a city</p>
@@ -27,7 +27,7 @@ export default class Projects extends React.Component {
                         </div>
                     </div>
                     <div className="rgbgame-thumbnail thumbnail">
-                        <div class="overlay">
+                        <div className="overlay">
                             <div className="description">
                                 <h3>RGB Game</h3>
                                 <p>A game to improve your RGB Knowledge</p>

@@ -2,13 +2,14 @@
 
 #skills-container{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
+    text-align: center;
     
     .skills-title{
         padding-top: 1em;
         font-size: @font-size*2.4;
-        color: white;
+        color: #000;
         letter-spacing: 1rem;
     }
 
@@ -20,12 +21,30 @@
         vertical-align: center;
         position: absolute;
         top: 30%;
+        width: 100%;
 
         .skills{
             padding: 2rem;
             display: block;
             color: white;
             line-height: 3rem;
+            position: relative;
+
+            span {
+                position: absolute;
+                bottom: 0%;
+                color: green;
+                left: 30%;
+                opacity: 1;
+                transition: opacity 1s ease-in-out;
+            }
+
+            &:hover span{
+                opacity: 1;
+            }
+
         }
+
+        
     }
 }

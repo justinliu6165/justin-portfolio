@@ -1,76 +1,36 @@
 @import '../Variables.less';
 
-#aboutpage{
+#about-page{
     height: 100vh;
+    text-align: center;
+    position: relative;
+    padding-top: 2em;
+    background-color:#448CA3;
 
     .about-title{
-        padding-top: 1em;
+        position: absolute;
+        top: 0.8em;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: @font-size*2;
-        color: @homepage-font-color;
+        color: rgb(230, 230, 230);
         letter-spacing: 1rem;
         text-transform: uppercase;
-        
-        &:after {
-            content: '';
-            width: 24%;
-            height: 2px;
-            display: block;
-            margin: 0 auto;
-            background: @homepage-font-color;
-        }
+        font-weight: 800;
+        background-color:#448CA3;
+        padding-left: 2rem;
+        padding-right: 1rem;
     }
 
     .profile{
-        display: flex;
 
        .description{
-            flex: 1;
-            color: @homepage-font-color;
-            width: 30%;
-            margin: 1rem;
+            color:rgb(230, 230, 230);
+            width: 80%;
+            margin: 1rem auto;
             line-height: 2rem;
-            text-align: right;
-            padding-left: 3rem;
-        } 
-
-        .profile-image{
-            flex: 1;
-            width: 30%;
-            margin-top: 1rem;
-            margin-right: 4rem;
-            border-radius: 0.2rem;
-            height: 22%;
-            box-shadow: 3px 5px @main-color;
+            padding: 3rem;
+            outline: 3px solid rgb(230, 230, 230);;
         } 
     }
-
-    .info{
-        margin-left: 1rem;
-
-        .info-sec{
-            display: inline-block;
-            margin: 1rem 2rem;
-            color:rgb(49, 49, 49);
-            border: 1px solid rgb(110, 110, 110);
-            border-radius: 5px;
-            padding: 1rem;
-            background-color: lighten(@main-color, 30%);
-            transition: all 0.2s linear;
-            box-shadow: 1.4px 1.4px @main-color;
-
-            &:hover{
-                background-color: darken(@main-color, 10%);
-                color:@homepage-font-color;
-                a{
-                    color: @homepage-font-color;
-                }
-            }
-
-            a{
-                text-decoration: none;
-                color: rgb(49, 49, 49);
-            }
-        }
-    }
-    
 }

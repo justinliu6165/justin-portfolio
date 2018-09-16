@@ -1,15 +1,27 @@
 import React from 'react';
 import './HomePage.less';
-import NavBar from '../NavBar/NavBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function HomePage() {
     return (
-        <div className="header">
-            <NavBar />
-            <div className="title">
-                <div className="name">Justin Liu</div>
-                <div className="mini">Junior Web Developer</div>
+        <div id="hero-container">
+            <div className="overlay-container">
+                <div className="top-overlay">
+                    <div className="top-overlay-sect"></div>
+                    <div className="top-overlay-sect"></div>
+                    <div className="top-overlay-sect"></div>
+                </div>
+                <div className="bottom-overlay">
+                    <div className="bottom-overlay-sect"></div>
+                    <div className="bottom-overlay-sect"></div>
+                    <div className="bottom-overlay-sect"></div>
+                </div>
+            </div >
+            <div className="hero-title">
+                Justin Liu
+                <span>Junior Software Developer</span>
             </div>
-        </div>
+            <FontAwesomeIcon icon="angle-down" className="arrow-icon"/>
+        </div >
     )
 }
