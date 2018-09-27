@@ -1,36 +1,45 @@
 @import '../Variables.less';
 
 #about-page{
-    height: 100vh;
+    height: 80vh;
+    width: 100%;
     text-align: center;
-    position: relative;
     padding-top: 2em;
     background-color:#448CA3;
 
-    .about-title{
-        position: absolute;
-        top: 0.8em;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: @font-size*2;
-        color: rgb(230, 230, 230);
-        letter-spacing: 1rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        background-color:#448CA3;
-        padding-left: 2rem;
-        padding-right: 1rem;
-    }
-
     .profile{
+        margin: auto;
+        position: relative;
+        height: 100%;
+        width: 60%;
+        
+        .about-title{
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: @font-size*2;
+            color: rgb(230, 230, 230);
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            background-color:#448CA3;
+            padding-left: 2rem;
+            padding-right: 1rem;
+            z-index: 2;
+        }
 
        .description{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color:rgb(230, 230, 230);
-            width: 80%;
-            margin: 1rem auto;
+            width: 100%;
+            margin: 0 auto;
             line-height: 2rem;
-            padding: 3rem;
-            outline: 3px solid rgb(230, 230, 230);;
+            padding: 2rem;
+            outline: 3px solid rgb(230, 230, 230);
         } 
     }
 }

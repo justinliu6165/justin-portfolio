@@ -7,6 +7,10 @@ import TechSkills from '../Frontend/Components/TechSkills/TechSkills';
 import Projects from './Components/Projects/Projects';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {faEnvelope, faAngleDown, faPhone } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 library.add(faEnvelope, faAngleDown, faPhone);
 

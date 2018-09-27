@@ -21,7 +21,7 @@ export default function TechSkills() {
                 </li>
                 <li className="skills">
                     <div className="html5icon"></div>
-                    <span>TML5</span>
+                    <span>HTML5</span>
                 </li>
                 <li className="skills">
                     <div className="nodeicon"></div>
